@@ -18,8 +18,8 @@ client.on('message',msg =>{
 
     if(command === 'ping'){
         msg.channel.send('Pong!  🏓');
-    } else if (command == 'Exigete'){
-        msg.channel.send('Innova ,UPC 👁👄👁')
+    } else if (command === 'Exigete'){
+        msg.channel.send('Innova ,UPC 👁👄👁');
     }
 
     if (msg.content === "!mod-me"){
