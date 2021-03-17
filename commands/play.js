@@ -14,6 +14,26 @@ module.exports = {
         if(!permissions.has('SPEAK')) return message.channel.send('No tienes los permisos correctos')
         if(!args.length) return message.channel.send('Tienes que poner el nombre de una cancion!');
         
+        const validURL = (str) =>{
+            var regex = /(http|https):\/\/(\w+:{0,1}\w*)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/;
+            if(!regex.test(str)){
+                return false;
+            } else {
+                return true;
+            }
+        }
+        if (validURL(args[0])){
+            const connection = await voiceChannel.join();
+            const stream = ytdl(args[0],{filter: 'audioonly'});
+            connection.play(stream,{seek:0,volume:1})
+            .on('finish',()=>{
+                voiceChannel.leave();
+            });
+            await message.reply(`🎧 Reproduciendo ahora ***tu bullita.***`)
+            return
+            
+        }
+
         const connection = await voiceChannel.join();
 
         const videoFinder = async(query) => {
