@@ -4,7 +4,7 @@ const Discord = require('discord.js')
 const client = new Discord.Client()
 
 client.on('ready',()=>{
-    console.log('Our Bot is loged on')
+    console.log('El bot esta activado')
 })
 
 client.on('message',msg =>{
