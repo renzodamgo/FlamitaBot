@@ -1,7 +1,7 @@
 require('dotenv').config()
 
 const Discord = require('discord.js')
-const client = new Discord.Client()
+const client = new Discord.Client({partials:[ "MESSAGE","CHANNEL","REACTION"]})
 
 const rolUpecino = "821716451823714346"
 
@@ -18,6 +18,8 @@ for(const file of commandFiles){
 
 client.on('ready',()=>{
     console.log('El bot esta activado!!')
+    client.user.setActivity('Doom Eternal')
+    
 })
 
 client.on('message',msg =>{
@@ -34,6 +36,12 @@ client.on('message',msg =>{
         client.commands.get('play').execute(msg,args)
     }else if (command == 'mimir'){
         client.commands.get('mimir').execute(msg,args)
+    }else if (command == 'link'){
+        client.commands.get('link').execute(msg,args)
+    }else if (command == 'commands'){
+        client.commands.get('commands').execute(msg,args)
+    }else if (command == 'rol'){
+        client.commands.get('rol').execute(msg,args,Discord,client)
     }
     //add commands
 
