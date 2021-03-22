@@ -31,7 +31,7 @@ module.exports = {
                 + `${finTeamEmoji} Finanzas\n`
                 + `${redTeamEmoji} Redes y protocolos\n`
                 + `${juegosTeamEmoji} Desarrollo de juegos para Móviles\n`
-                + `${iaTeamEmoji} Redes y protocolos\n`);
+                + `${iaTeamEmoji} Inteligencia Artificial\n`);
  
         let messageEmbed = await message.channel.send(embed);
         messageEmbed.react(yellowTeamEmoji);
