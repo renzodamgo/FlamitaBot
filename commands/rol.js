@@ -5,7 +5,7 @@ module.exports = {
         const channel = '821767444983971860';
         const yellowTeamRole = message.guild.roles.cache.find(role => role.name === "Data mining");
         const blueTeamRole = message.guild.roles.cache.find(role => role.name === "Desarrollo web");
-        const isoTeamRole = message.guild.roles.cache.find(role => role.name === "Inginería de Software");
+        const isoTeamRole = message.guild.roles.cache.find(role => role.name === "Ingienería de Software");
         const pimTeamRole = message.guild.roles.cache.find(role => role.name === "Procesamiento de Imágenes");
         const finTeamRole = message.guild.roles.cache.find(role => role.name === "Finanzas");
         const redTeamRole = message.guild.roles.cache.find(role => role.name === "Redes");
@@ -26,7 +26,7 @@ module.exports = {
             .setDescription('Al elegir un curso podrás ver su chat de voz y texto!\n\n'
                 + `${yellowTeamEmoji} Data mining\n`
                 + `${blueTeamEmoji} Desarrollo web\n`
-                + `${isoTeamEmoji} Inginería de Software\n`
+                + `${isoTeamEmoji} Ingienería de Software\n`
                 + `${pimTeamEmoji} Procesamiento de Imágenes\n`
                 + `${finTeamEmoji} Finanzas\n`
                 + `${redTeamEmoji} Redes y protocolos\n`
