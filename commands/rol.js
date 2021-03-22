@@ -40,8 +40,9 @@ module.exports = {
         messageEmbed.react(pimTeamEmoji);
         messageEmbed.react(finTeamEmoji);
         messageEmbed.react(redTeamEmoji);
-        messageEmbed.react(iaTeamEmoji);
+        
         messageEmbed.react(juegosTeamEmoji);
+        messageEmbed.react(iaTeamEmoji);
 
  
         client.on('messageReactionAdd', async (reaction, user) => {
