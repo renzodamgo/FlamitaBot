@@ -12,6 +12,7 @@ module.exports = {
         const juegosTeamRole = message.guild.roles.cache.find(role => role.name === "Desarrollo de juegos para Móviles");
         const iaTeamRole = message.guild.roles.cache.find(role => role.name === "Inteligencia Artificial");
         const disoTeamRole = message.guild.roles.cache.find(role => role.name === "Diseño de Experimentos de Ingeniería de Software");
+        const mlTeamRole = message.guild.roles.cache.find(role => role.name === "Machine Learning");
         const yellowTeamEmoji = '⛏';
         const blueTeamEmoji = '🕸';
         const isoTeamEmoji = '👨🏽‍💻';
@@ -21,6 +22,7 @@ module.exports = {
         const iaTeamEmoji = '🤖';
         const juegosTeamEmoji = '🎮';
         const disoTeamEmoji = '📝';
+        const mlTeamEmoji = '⚙️';
  
         let embed = new Discord.MessageEmbed()
             .setColor('#e42643')
@@ -34,7 +36,8 @@ module.exports = {
                 + `${redTeamEmoji} Redes y protocolos\n`
                 + `${juegosTeamEmoji} Desarrollo de juegos para Móviles\n`
                 + `${iaTeamEmoji} Inteligencia Artificial\n`
-                + `${disoTeamEmoji} Diseño de Experimentos de Ingeniería de Software\n`);
+                + `${disoTeamEmoji} Diseño de Experimentos de Ingeniería de Software\n`
+                + `${mlTeamEmoji} Machine Learning\n`);
  
         let messageEmbed = await message.channel.send(embed);
         messageEmbed.react(yellowTeamEmoji);
@@ -47,6 +50,7 @@ module.exports = {
         messageEmbed.react(juegosTeamEmoji);
         messageEmbed.react(iaTeamEmoji);
         messageEmbed.react(disoTeamEmoji);
+        messageEmbed.react(mlTeamEmoji);
 
  
         client.on('messageReactionAdd', async (reaction, user) => {
@@ -82,6 +86,9 @@ module.exports = {
                 }
                 if (reaction.emoji.name === disoTeamEmoji) {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(disoTeamRole);
+                }
+                if (reaction.emoji.name === mlTeamEmoji) {
+                    await reaction.message.guild.members.cache.get(user.id).roles.add(mlTeamRole);
                 }
                 
             } else {
@@ -125,6 +132,9 @@ module.exports = {
                 }
                 if (reaction.emoji.name === disoTeamEmoji) {
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(disoTeamRole);
+                }
+                if (reaction.emoji.name === mlTeamEmoji) {
+                    await reaction.message.guild.members.cache.get(user.id).roles.remove(mlTeamRole);
                 }
             } else {
                 return;
