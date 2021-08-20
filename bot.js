@@ -26,6 +26,12 @@ client.on('message',msg =>{
     if(msg.content === 'good bot'){
         client.commands.get('good').execute(msg)
     }
+    if(msg.content === 'nice bot'){
+        client.commands.get('good').execute(msg)
+    }
+    if(msg.content === 'gud bot'){
+        client.commands.get('good').execute(msg)
+    }
     if (!msg.content.startsWith(prefix) || msg.author.bot) return;  
 
     const args = msg.content.slice(prefix.length).split(/ +/); 
