@@ -32,26 +32,27 @@ module.exports = {
         const topicosEmoji = '📖'
         const gerenciaEmoji = '👨🏽‍💼'
         const seguridadEmoji = '🔒'
-        const concurrenteEmoji = '⚡️'
+        const concurrenteEmoji = '🚀'
  
         let embed = new Discord.MessageEmbed()
             .setColor('#e42643')
             .setTitle('Elegir cursos!')
             .setDescription('Al elegir un curso podrás ver su chat de voz y texto!\n\n'
-                + "Ciclo 06 👶\n"
-                + `${isoTeamEmoji} Ingienería de Software\n`
-                + "Ciclo 07 👦\n"
+                + "== Ciclo 06 👶 ==\n"
+                + `${isoTeamEmoji} Ingienería de Software\n\n`
+                + "== Ciclo 07 👦 ==\n"
                 + `${disoTeamEmoji} Diseño de Experimentos de Ingeniería de Software\n`
                 + `${finTeamEmoji} Finanzas\n`
                 + `${mlTeamEmoji} Machine Learning\n`
-                + `${topicosEmoji} Tópicos\n`
-                + "Ciclo 08 👨‍🦳\n"
+                + `${topicosEmoji} Tópicos\n\n`
+                + "== Ciclo 08 👨‍🦳 ==\n"
                 + `${dataEmoji} Data mining\n`
                 + `${gerenciaEmoji} Gerencia de Proyectos de Software\n`
-                + `${emprenEmoji} Emprendimiento de Negocios Sostenibles\n`
-                + "Ciclo 09 👴\n"
+                + `${emprenEmoji} Emprendimiento de Negocios Sostenibles\n\n`
+                + "== Ciclo 09 👴 ==\n"
                 + `${concurrenteEmoji} Programación Concurrente\n`
-                + `${seguridadEmoji} Seguridad informática\n`)
+                + `${seguridadEmoji} Seguridad informática\n\n`
+                +)
 
 
                 // + `${blueTeamEmoji} Desarrollo web\n`
