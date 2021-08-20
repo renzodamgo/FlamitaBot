@@ -52,7 +52,7 @@ module.exports = {
                 + "== Ciclo 09 👴 ==\n"
                 + `${concurrenteEmoji} Programación Concurrente\n`
                 + `${seguridadEmoji} Seguridad informática\n\n`
-                +)
+                + "Si necesitan otro curso etiqueten a @Mod")
 
 
                 // + `${blueTeamEmoji} Desarrollo web\n`
