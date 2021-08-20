@@ -5,7 +5,7 @@ module.exports = {
         const channel = '821767444983971860';
         const dataTeamRole = message.guild.roles.cache.find(role => role.name === "Data mining");
         // const blueTeamRole = message.guild.roles.cache.find(role => role.name === "Desarrollo web");
-        const isoTeamRole = message.guild.roles.cache.find(role => role.name === "Ingienería de Software");
+        const isoTeamRole = message.guild.roles.cache.find(role => role.name === "Ingeniería de Software");
         // const pimTeamRole = message.guild.roles.cache.find(role => role.name === "Procesamiento de Imágenes");
         const finTeamRole = message.guild.roles.cache.find(role => role.name === "Finanzas");
         // const redTeamRole = message.guild.roles.cache.find(role => role.name === "Redes");
