@@ -28,8 +28,8 @@ nodemon bot.js
 | !link                   | Get the link to invite others students to the server                             |
 | !exigete                | Finish the university motto                                                      |
 | !ping                   | Test conection, recieves pong if connected                                       |
-| !play {music_name}      | Search in youtube and plays the music on the user voice channel                       |
-| !mimir                  | Bot goes to sleep and disconnects from the voice channel                          |
+| !play {music_name}      | Search in youtube and plays the music on the user voice channel                  |
+| !mimir                  | Bot goes to sleep and disconnects from the voice channel                         |
 | !rol                    | Sends list of all the available courses andthe user selects wich course to enter |
 | 'good bot' or 'gud bot' | He'll react with a ❤️ reaction :)                                                |
 
@@ -37,10 +37,14 @@ nodemon bot.js
 
 1. Call `!rol` and you'll see all the courses.
 
-   ![](imgs/flamitarol.png)
+   <p align="left">
+   <img width="460" height="420" src="imgs/flamitarol.png">
+   </p>
 
 2. Select which course you want by reacting with their assigned emoji.
 
 3. The bot will assign you the role of the course and you are in! 🥳
 
-   ![](imgs/class.png)
+    <p align="left">
+   <img width="360" height="150" src="imgs/class.png">
+   </p>
