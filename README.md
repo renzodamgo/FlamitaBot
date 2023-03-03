@@ -28,8 +28,8 @@ nodemon bot.js
 | !link                   | Get the link to invite others students to the server                             |
 | !exigete                | Finish the university motto                                                      |
 | !ping                   | Test conection, recieves pong if connected                                       |
-| !play {music_name}      | Search in youtube and plays the music on the voice channel                       |
-| !mimir                  | Bot goes to sleep and disconects from the voice channel                          |
+| !play {music_name}      | Search in youtube and plays the music on the user voice channel                       |
+| !mimir                  | Bot goes to sleep and disconnects from the voice channel                          |
 | !rol                    | Sends list of all the available courses andthe user selects wich course to enter |
 | 'good bot' or 'gud bot' | He'll react with a ❤️ reaction :)                                                |
 
