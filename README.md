@@ -1,6 +1,7 @@
-# Flamita Bot
+# Flamita Bot 🔥
 
 Discord Bot in charge of assigning roles so that students can access their courses.
+(Flamita was hosted on a Heroku free deno but with the service killing free hosting options now is in search of a new home :()
 
 <p align="center">
   <img width="460" height="360" src="imgs/flamitabot.png">
